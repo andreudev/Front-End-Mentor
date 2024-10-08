@@ -1,0 +1,93 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+
+  --font1: "Figtree", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font1);
+  background-color: var(--Yellow);
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.card {
+  width: 90%;
+  max-width: 330px;
+  background-color: var(--White);
+  margin: auto;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 10px 10px 1px rgb(0, 0, 0);
+}
+
+.card__figure {
+  border-radius: 0.7em;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  display: block;
+}
+
+.card__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px auto;
+}
+
+.text__status {
+  width: max-content;
+  padding: 4px 12px;
+  background-color: var(--Yellow);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.text__course-title {
+  color: var(--Gray-950);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.text__date {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--Gray-950);
+}
+
+.text__description {
+  color: var(--Gray-500);
+  font-size: 1rem;
+}
+
+.card__autor {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
+
+.autor__image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
